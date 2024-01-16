@@ -1,0 +1,19 @@
+.hero {
+  &__container {
+    margin-bottom: 50px;
+  }
+  &__header {
+    font-size: 40px;
+    font-family: vontgod;
+    color: #fff;
+    text-align: center;
+    padding-top: 90px;
+    line-height: 70px;
+  }
+  &__subheader {
+    font-size: 20px;
+    font-family: forum;
+    color: #fff;
+    text-align: center;
+  }
+}

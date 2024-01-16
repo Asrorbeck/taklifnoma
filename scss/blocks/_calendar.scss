@@ -1,0 +1,46 @@
+.calendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  &__date {
+    font-family: cormorantR;
+    font-size: 80px;
+    color: #AE834A; 
+    line-height: 80px;
+  }
+  &__img {
+    max-width: 900px;
+    width: 100%;
+  }
+  &__item {
+    margin-bottom: 20px;
+    font-family: cormorantL;
+    font-size: 18px;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  &__month {
+    font-family: cormorantL;
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+
+  &__week {
+    font-family: cormorantL;
+    font-size: 30px;
+    color: #AE834A;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}

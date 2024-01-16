@@ -1,0 +1,57 @@
+.dress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+  &__body {
+    text-align: center;
+    margin-top: 10px;
+    font-family: cormorantS;
+  }
+  &__header {
+    font-family: cormorantR;
+    font-size: 35px;
+    color: #2F2F2F;
+  }
+  &__item {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    &:nth-child(1){
+        background-color: #6A6763;
+    }
+
+    &:nth-child(2){
+        background-color: #FFFFFF;
+    }
+
+    &:nth-child(3){
+        background-color: #E2BD76;
+    }
+
+    &:nth-child(4){
+        background-color: #B08A40;
+    }
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 250px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  &__quest {
+    font-family: cormorantR;
+    font-size: 30px;
+    color: #2F2F2F;
+  }
+  &__subheader {
+    text-align: center;
+    font-family: forum;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 35px;    
+  }
+}

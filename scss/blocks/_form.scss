@@ -1,0 +1,84 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  &__answer {
+  }
+  &__answer-label {
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  &__form-answer-wrapper {
+    font-family: cormorantR;
+    font-size: 20px;
+  }
+  &__form-header {
+    font-family: cormorantM;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  &__form-wrapper {
+    margin-bottom: 10px;
+  }
+  &__header {
+    font-family: cormorantM;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  &__input {
+    border: none;
+    background: none;
+    outline: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 2px solid #D2A650;
+    font-size: 16px;
+    font-family: cormorantL;
+    margin-bottom: 25px;
+  }
+
+  &__subheader {
+    font-family: cormorantS;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  &__wish {
+    border: none;
+    background: none;
+    outline: none;
+    border: 2px solid #D2A650;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    font-family: cormorantL;
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__submit {
+    margin-top: 16px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 5px 40px;
+    background-color: #D2A650;
+    font-family: sans-serif;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}

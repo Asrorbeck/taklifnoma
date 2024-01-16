@@ -1,0 +1,75 @@
+.program {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 35px;
+  &__header {
+    font-family: cormorantR;
+    font-size: 30px;
+    text-align: center;
+    color: #2f2f2f;
+    margin-bottom: 30px;
+  }
+  &__image {
+    max-width: 200px;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  &__item:nth-child(1):before {
+    background-image: url("../../img/photo.png");
+  }
+
+  &__item:nth-child(3):before {
+    background-image: url("../../img/music.png");
+  }
+
+  &__item:nth-child(5):before {
+    background-image: url("../../img/tort.png");
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 140px;
+    &::before {
+      position: absolute;
+      content: "";
+      display: inline-block;
+      width: 150px;
+      height: 120px;
+      top: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+
+  &__item-action {
+    text-align: center;
+    font-family: forum;
+    font-size: 25px;
+  }
+  &__item-time {
+    margin-bottom: 5px;
+    font-family: forum;
+    font-size: 25px;
+  }
+  &__line {
+    width: 2px;
+    height: 70px;
+    border: none;
+    background-color: #a57820;
+    margin-bottom: 20px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
