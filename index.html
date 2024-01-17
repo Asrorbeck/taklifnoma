@@ -12,44 +12,40 @@
       <div class="background-image"></div>
     </div>
 
-    <header class="header">
-      <div class="container">
-        <div class="navbar">
-          <div class="menu-button" onclick="toggleMenu()">
-            <span class="menu-icon">&#9776;</span>
-          </div>
-
-          <a href="#" class="navbar__logo">Happy New Year!</a>
-
-          <button id="navbar__btn" class="navbar__btn">
-            <img
-              width="20"
-              id="music-icon"
-              src="./img/mute.svg"
-              alt="mute music"
-            />
-          </button>
+    <header>
+      <div class="navbar">
+        <div class="menu-button" onclick="toggleMenu()">
+          <span class="menu-icon"><img src="./img/burger.svg" alt="" /></span>
         </div>
 
-        <div class="menu-overlay" onclick="toggleMenu()"></div>
+        <a href="#" class="navbar__logo">le-invitations</a>
 
-        <div class="menu">
-          <div class="menu-header">
-            <span class="close-button" onclick="toggleMenu()">&times;</span>
-          </div>
+        <button id="navbar__btn" class="navbar__btn">
+          <img
+            width="20"
+            id="music-icon"
+            src="./img/mute.svg"
+            alt="mute music"
+          />
+        </button>
+      </div>
 
-          <ul>
-            <li><a href="#invit">We invite you!</a></li>
+      <div class="menu-overlay" onclick="toggleMenu()"></div>
 
-            <li><a href="#plan">Plan</a></li>
-
-            <li><a href="#adres">How to get there?</a></li>
-
-            <li><a href="#dres">Dress code</a></li>
-
-            <li><a href="#question">Questionnaire</a></li>
-          </ul>
+      <div class="menu">
+        <div class="menu-header">
+          <span class="close-button" onclick="toggleMenu()">&times;</span>
         </div>
+
+        <ul>
+          <li><a href="#invit">Приглашаем Вас!</a></li>
+
+          <li><a href="#map">Как добраться?</a></li>
+
+          <li><a href="#plan">План мероприятия</a></li>
+
+          <li><a href="#time">До открытия осталось...</a></li>
+        </ul>
       </div>
     </header>
 
@@ -205,7 +201,7 @@
 
               <form class="form__form">
                 <input
-                class="form__input"
+                  class="form__input"
                   type="text"
                   required
                   placeholder="Your name and surname..."
@@ -226,9 +222,7 @@
                       value="bride"
                       id="bride"
                     />
-                    <label class="form__answer-label" for="type"
-                      >Bride’s</label
-                    >
+                    <label class="form__answer-label" for="type">Bride’s</label>
                   </div>
 
                   <div class="form__form-answer-wrapper">
@@ -240,9 +234,7 @@
                       value="groom"
                       id="groom"
                     />
-                    <label class="form__answer-label" for="type"
-                      >Groom’s</label
-                    >
+                    <label class="form__answer-label" for="type">Groom’s</label>
                   </div>
                 </div>
 
@@ -280,22 +272,112 @@
                   </div>
                 </div>
 
-                <p class="form__subheader">IF YOU WISH YOU CAN SHARE YOUR WISHES TO US HERE</p>
+                <p class="form__subheader">
+                  IF YOU WISH YOU CAN SHARE YOUR WISHES TO US HERE
+                </p>
 
-                <input class="form__wish" placeholder="Text..." type="text" name="wish" id="wish">
+                <input
+                  class="form__wish"
+                  placeholder="Text..."
+                  type="text"
+                  name="wish"
+                  id="wish"
+                />
 
                 <div class="form__btn-wrapper">
                   <button class="form__submit" type="submit">SEND</button>
                 </div>
               </form>
             </div>
+
+            <div class="time">
+              <h2 class="time__header">
+                WE ARE WAITING <br />
+                FOR YOU IN...
+              </h2>
+
+              <ul
+                class="time__list"
+                id="time"
+                data-aos="fade"
+                data-aos-duration="2000"
+              >
+                <li class="time__item">
+                  <h3 id="days" class="time__number">00</h3>
+
+                  <p class="time__body">Days</p>
+                </li>
+
+                <li class="time__item">
+                  <h3 id="hours" class="time__number">00</h3>
+
+                  <p class="time__body">Hours</p>
+                </li>
+
+                <li class="time__item">
+                  <h3 id="minutes" class="time__number">00</h3>
+
+                  <p class="time__body">Minutes</p>
+                </li>
+
+                <li class="time__item">
+                  <h3 id="seconds" class="time__number">00</h3>
+
+                  <p class="time__body">Seconds</p>
+                </li>
+              </ul>
+
+              <img src="./img/time.png" alt="" class="time__img" />
+
+              <a href="#" class="time__link">le_invitations</a>
+
+              <div
+                class="time__footer-wrapper"
+                data-aos="fade"
+                data-aos-duration="2000"
+              >
+                <a href="tel:+998998515582" class="time__social-link"
+                  ><img src="./img/call.svg" alt=""
+                /></a>
+
+                <a href="https://t.me/le_invitations" class="time__social-link"
+                  ><img src="./img/telegram.svg" alt="" />
+                </a>
+
+                <a
+                  href="https://www.instagram.com/le_invitations"
+                  class="time__social-link"
+                  ><img src="./img/instagram.svg" alt="" />
+                </a>
+
+                <a
+                  href="https://www.meta.com/le_invitations"
+                  class="time__social-link"
+                  ><img src="./img/facebook.svg" alt="" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="container"></div>
-    </footer>
+    <audio id="background-music" style="display: none" loop muted>
+      <source src="./music/music.m4a" type="audio/mp4" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <p>Open with music?</p>
+        <button class="modal-button" id="yesBtn">Yes</button>
+        <button class="modal-button" id="noBtn">No</button>
+      </div>
+    </div>
+
   </body>
+
+  <script src="./js/index.js"></script>
+
+
 </html>
