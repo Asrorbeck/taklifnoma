@@ -199,7 +199,7 @@
                 Please answer a few questions that we have prepared for You.
               </p>
 
-              <form class="form__form">
+              <form class="form__form" onsubmit="return sendTelegram()">
                 <input
                   class="form__input"
                   type="text"
@@ -214,27 +214,31 @@
                   </p>
 
                   <div class="form__form-answer-wrapper">
-                    <input
-                      required
-                      class="form__answer"
-                      type="radio"
-                      name="come"
-                      value="bride"
-                      id="bride"
-                    />
-                    <label class="form__answer-label" for="type">Bride’s</label>
+                    <label class="form__answer-label" for="bride">
+                      <input
+                        required
+                        class="form__answer"
+                        type="radio"
+                        name="come"
+                        value="bride"
+                        id="bride"
+                      />
+                      Bride’s
+                    </label>
                   </div>
 
                   <div class="form__form-answer-wrapper">
-                    <input
-                      required
-                      class="form__answer"
-                      type="radio"
-                      name="come"
-                      value="groom"
-                      id="groom"
-                    />
-                    <label class="form__answer-label" for="type">Groom’s</label>
+                    <label class="form__answer-label" for="groom">
+                      <input
+                        required
+                        class="form__answer"
+                        type="radio"
+                        name="come"
+                        value="groom"
+                        id="groom"
+                      />
+                      Groom’s
+                    </label>
                   </div>
                 </div>
 
@@ -244,31 +248,31 @@
                   </p>
 
                   <div class="form__form-answer-wrapper">
-                    <input
-                      required
-                      class="form__answer"
-                      type="radio"
-                      name="answer"
-                      value="yes"
-                      id="yes"
-                    />
-                    <label class="form__answer-label" for="type"
-                      >Certainly, I'll be happy to come</label
-                    >
+                    <label class="form__answer-label" for="yes">
+                      <input
+                        required
+                        class="form__answer"
+                        type="radio"
+                        name="answer"
+                        value="yes"
+                        id="yes"
+                      />
+                      Certainly, I'll be happy to come
+                    </label>
                   </div>
 
                   <div class="form__form-answer-wrapper">
-                    <input
-                      required
-                      class="form__answer"
-                      type="radio"
-                      name="answer"
-                      value="no"
-                      id="no"
-                    />
-                    <label class="form__answer-label" for="type"
-                      >Unfortunately, I won't be able to attend</label
-                    >
+                    <label class="form__answer-label" for="no">
+                      <input
+                        required
+                        class="form__answer"
+                        type="radio"
+                        name="answer"
+                        value="no"
+                        id="no"
+                      />
+                      Unfortunately, I won't be able to attend
+                    </label>
                   </div>
                 </div>
 
@@ -374,10 +378,8 @@
         <button class="modal-button" id="noBtn">No</button>
       </div>
     </div>
-
   </body>
 
   <script src="./js/index.js"></script>
-
-
+  <script src="./js/telegram.js"></script>
 </html>
