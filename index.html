@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>le-invitations</title>
   </head>
   <body>
@@ -48,10 +49,28 @@
         </ul>
 
         <div class="language-buttons">
-          <button id="en-btn" class="language-button" onclick="changeLanguage('en')">English</button>
-          <button id="ru-btn" class="language-button" onclick="changeLanguage('ru')">Русский</button>
-          <button id="uz-btn" class="language-button" onclick="changeLanguage('uz')">O'zbekcha</button>
-      </div>
+          <button
+            id="en-btn"
+            class="language-button"
+            onclick="changeLanguage('en')"
+          >
+            English
+          </button>
+          <button
+            id="ru-btn"
+            class="language-button"
+            onclick="changeLanguage('ru')"
+          >
+            Русский
+          </button>
+          <button
+            id="uz-btn"
+            class="language-button"
+            onclick="changeLanguage('uz')"
+          >
+            O'zbekcha
+          </button>
+        </div>
       </div>
     </header>
 
@@ -59,12 +78,35 @@
       <section class="hero">
         <div class="container">
           <div class="hero__container">
-            <h2 id="hero__header" class="hero__header">Kamron & Malika</h2>
+            <h2 id="hero__header" class="hero__header">
+              <span data-aos="fade-up" data-aos-delay="100">K</span>
+              <span data-aos="fade-up" data-aos-delay="200">a</span>
+              <span data-aos="fade-up" data-aos-delay="300">m</span>
+              <span data-aos="fade-up" data-aos-delay="400">r</span>
+              <span data-aos="fade-up" data-aos-delay="500">o</span>
+              <span data-aos="fade-up" data-aos-delay="600">n</span>
+              <span data-aos="fade-up" data-aos-delay="700">&nbsp;</span>
+              <span data-aos="fade-up" data-aos-delay="800">&</span>
+              <span data-aos="fade-up" data-aos-delay="900">&nbsp;</span>
+              <span data-aos="fade-up" data-aos-delay="1000">M</span>
+              <span data-aos="fade-up" data-aos-delay="1100">a</span>
+              <span data-aos="fade-up" data-aos-delay="1200">l</span>
+              <span data-aos="fade-up" data-aos-delay="1300">i</span>
+              <span data-aos="fade-up" data-aos-delay="1400">k</span>
+              <span data-aos="fade-up" data-aos-delay="1500">a</span>
+            </h2>
+            
 
-            <p id="hero__subheader" class="hero__subheader">
+            <p id="hero__subheader" data-aos="fade" data-aos-duration="3000" class="hero__subheader">
               are inviting You to their wedding <br />
               21.12.2023
             </p>
+
+            <a href="#invit" class="arrow">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
           </div>
         </div>
       </section>
@@ -72,12 +114,12 @@
       <section class="main">
         <div class="container">
           <div class="main__container">
-            <div class="invit">
+            <div id="invit" class="invit">
               <img src="./img/invit.png" alt="" class="invit__img" />
 
-              <h2 id="invit__header" class="invit__header">Dear Guests!</h2>
+              <h2 id="invit__header" data-aos="fade" data-aos-duration="2000" class="invit__header">Dear Guests!</h2>
 
-              <p id="invit__body" class="invit__body">
+              <p id="invit__body" data-aos="fade" data-aos-duration="2000" class="invit__body">
                 It is a great pleasure to invite You to share the joy of the
                 special event for us - our wedding! <br /><br />
                 On this wonderful day, we would like to surround ourselves with
@@ -87,7 +129,7 @@
             </div>
 
             <div class="calendar">
-              <div class="calendar__wrapper">
+              <div class="calendar__wrapper" data-aos="fade" data-aos-duration="2000">
                 <p id="calendar__weekday" class="calendar__week">Thursday</p>
 
                 <p class="calendar__date">21</p>
@@ -97,7 +139,7 @@
 
               <p id="calendar__month" class="calendar__month">December 2023</p>
 
-              <ul class="calendar__list">
+              <ul class="calendar__list" data-aos="fade" data-aos-duration="2000">
                 <li class="calendar__item">Mon</li>
 
                 <li class="calendar__item">Tue</li>
@@ -113,54 +155,64 @@
                 <li class="calendar__item">Sun</li>
               </ul>
 
-              <img src="./img/calendar.png" alt="" class="calendar__img" />
+              <img src="./img/calendar.png" data-aos="fade" data-aos-duration="2000" alt="" class="calendar__img" />
             </div>
 
             <div class="program">
-              <img src="./img/program.png" alt="" class="program__image" />
+              <img src="./img/program.png" data-aos="fade" data-aos-duration="2000" alt="" class="program__image" />
 
-              <h2 id="program__header" class="program__header">
+              <h2 id="program__header" data-aos="fade" data-aos-duration="2000" class="program__header">
                 PROGRAM OF <br />THE DAY:
               </h2>
 
               <ul class="program__list">
-                <li class="program__item">
+                <li class="program__item" data-aos="fade" data-aos-duration="2000">
                   <p class="program__item-time">15:00</p>
 
-                  <p id="program__photo" class="program__item-action">PHOTO-<br />SHOOTING</p>
+                  <p id="program__photo" class="program__item-action">
+                    PHOTO-<br />SHOOTING
+                  </p>
                 </li>
 
-                <hr class="program__line" />
+                <hr class="program__line" data-aos="fade" data-aos-duration="2000" />
 
-                <li class="program__item">
+                <li class="program__item" data-aos="fade" data-aos-duration="2000">
                   <p class="program__item-time">18:00</p>
 
-                  <p id="program__event" class="program__item-action">MAIN EVENT</p>
+                  <p id="program__event" class="program__item-action">
+                    MAIN EVENT
+                  </p>
                 </li>
 
-                <hr class="program__line" />
+                <hr class="program__line" data-aos="fade" data-aos-duration="2000" />
 
-                <li class="program__item">
+                <li class="program__item" data-aos="fade" data-aos-duration="2000">
                   <p class="program__item-time">21:00</p>
 
-                  <p id="program__cake" class="program__item-action">CAKE<br />CUTTING</p>
+                  <p id="program__cake" class="program__item-action">
+                    CAKE<br />CUTTING
+                  </p>
                 </li>
               </ul>
             </div>
 
             <div class="location">
-              <img src="./img/location.png" alt="" class="location__img" />
+              <img src="./img/location.png" data-aos="fade" data-aos-duration="2000" alt="" class="location__img" />
 
-              <h2 id="location__header" class="location__header">LOCATION</h2>
+              <h2 id="location__header" data-aos="fade" data-aos-duration="2000" class="location__header">LOCATION</h2>
 
-              <p id="location__subheader" class="location__subheader">RESTOURANT “GRAND HALL”</p>
+              <p id="location__subheader" data-aos="fade" data-aos-duration="2000" class="location__subheader">
+                RESTOURANT “GRAND HALL”
+              </p>
 
-              <p id="location__location" class="location__location">
-                Tashkent, Yunusabad district, Yunusabad massif, 13th quarter, 15A
+              <p id="location__location" data-aos="fade" data-aos-duration="2000" class="location__location">
+                Tashkent, Yunusabad district, Yunusabad massif, 13th quarter,
+                15A
               </p>
 
               <iframe
                 class="location__iframe"
+                data-aos="fade" data-aos-duration="2000"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.9192563691954!2d69.29105150994185!3d41.36617055745413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef3498b32505d%3A0x467563cdfe1f41ec!2s%22Grand%20Hall%22!5e0!3m2!1sru!2s!4v1705420219510!5m2!1sru!2s"
                 style="border: 0"
                 allowfullscreen=""
@@ -169,36 +221,43 @@
               >
               </iframe>
 
-              <button id="location__yandex" class="location__yandex">YANDEX MAPS...</button>
+              <button id="location__yandex" data-aos="fade" data-aos-duration="2000" class="location__yandex">
+                YANDEX MAPS...
+              </button>
             </div>
 
             <div class="dress">
-              <h2 id="dress__header" class="dress__header">DRESS CODE</h2>
+              <h2 id="dress__header" data-aos="fade" data-aos-duration="2000" class="dress__header">DRESS CODE</h2>
 
-              <p id="dress__subheader" class="dress__subheader">
-                We will be grateful <br /> if You support the wedding <br /> day color palette.
+              <p id="dress__subheader" data-aos="fade" data-aos-duration="2000" class="dress__subheader">
+                We will be grateful <br />
+                if You support the wedding <br />
+                day color palette.
               </p>
 
               <ul class="dress__list">
-                <li class="dress__item"></li>
-                <li class="dress__item"></li>
-                <li class="dress__item"></li>
-                <li class="dress__item"></li>
+                <li class="dress__item" data-aos="fade" data-aos-duration="2000"></li>
+                <li class="dress__item" data-aos="fade" data-aos-duration="2000"></li>
+                <li class="dress__item" data-aos="fade" data-aos-duration="2000"></li>
+                <li class="dress__item" data-aos="fade" data-aos-duration="2000"></li>
               </ul>
 
-              <h3 id="dress__quest" class="dress__quest">QUESTIONNAIRE</h3>
+              <h3 id="dress__quest" data-aos="fade" data-aos-duration="2000" class="dress__quest">QUESTIONNAIRE</h3>
 
-              <p id="dress__body" class="dress__body">
-                YOUR PRESENCE IS INCREDIBLY <br /> IMPORTANT TO US, AND WE WILL <br /> BE HAPPY TO SHARE THIS <br /> MOMENT WITH YOU.
+              <p id="dress__body" data-aos="fade" data-aos-duration="2000" class="dress__body">
+                YOUR PRESENCE IS INCREDIBLY <br />
+                IMPORTANT TO US, AND WE WILL <br />
+                BE HAPPY TO SHARE THIS <br />
+                MOMENT WITH YOU.
               </p>
             </div>
 
-            <div class="form">
-              <p id="form__header" class="form__header">
+            <div class="form" data-aos="fade" data-aos-duration="2000">
+              <p id="form__header" class="form__header" data-aos="fade" data-aos-duration="2000">
                 Please answer a few questions that we have prepared for You.
               </p>
 
-              <form class="form__form" onsubmit="return sendTelegram()">
+              <form data-aos="fade" data-aos-duration="2000" class="form__form" onsubmit="return sendTelegram()">
                 <input
                   class="form__input"
                   type="text"
@@ -288,13 +347,15 @@
                 />
 
                 <div class="form__btn-wrapper">
-                  <button id="form__submit" class="form__submit" type="submit">SEND</button>
+                  <button id="form__submit" class="form__submit" type="submit">
+                    SEND
+                  </button>
                 </div>
               </form>
             </div>
 
             <div class="time">
-              <h2 id="time__header" class="time__header">
+              <h2 id="time__header" data-aos="fade" data-aos-duration="2000" class="time__header">
                 WE ARE WAITING <br />
                 FOR YOU IN...
               </h2>
@@ -305,34 +366,34 @@
                 data-aos="fade"
                 data-aos-duration="2000"
               >
-                <li class="time__item">
+                <li class="time__item" data-aos="fade" data-aos-duration="2000">
                   <h3 id="days" class="time__number">00</h3>
 
                   <p id="time__days" class="time__body">Days</p>
                 </li>
 
-                <li class="time__item">
+                <li class="time__item" data-aos="fade" data-aos-duration="2000">
                   <h3 id="hours" class="time__number">00</h3>
 
                   <p id="time__hours" class="time__body">Hours</p>
                 </li>
 
-                <li class="time__item">
+                <li class="time__item" data-aos="fade" data-aos-duration="2000">
                   <h3 id="minutes" class="time__number">00</h3>
 
                   <p id="time__minutes" class="time__body">Minutes</p>
                 </li>
 
-                <li class="time__item">
+                <li class="time__item" data-aos="fade" data-aos-duration="2000">
                   <h3 id="seconds" class="time__number">00</h3>
 
                   <p id="time__seconds" class="time__body">Seconds</p>
                 </li>
               </ul>
 
-              <img src="./img/time.png" alt="" class="time__img" />
+              <img src="./img/time.png" data-aos="fade" data-aos-duration="2000" alt="" class="time__img" />
 
-              <a href="#" class="time__link">le_invitations</a>
+              <a href="#" class="time__link" data-aos="fade" data-aos-duration="2000">le_invitations</a>
 
               <div
                 class="time__footer-wrapper"
@@ -373,9 +434,15 @@
     <div id="myModal" class="modal">
       <div class="modal-content">
         <p>Which language do you prefer?</p>
-        <button class="modal-button" onclick="changeLanguage('en')">English</button>
-        <button class="modal-button" onclick="changeLanguage('ru')">Русский</button>
-        <button class="modal-button" onclick="changeLanguage('uz')">O'zbekcha</button>
+        <button class="modal-button" onclick="changeLanguage('en')">
+          English
+        </button>
+        <button class="modal-button" onclick="changeLanguage('ru')">
+          Русский
+        </button>
+        <button class="modal-button" onclick="changeLanguage('uz')">
+          O'zbekcha
+        </button>
       </div>
     </div>
   </body>
@@ -383,4 +450,9 @@
   <script src="./js/language.js"></script>
   <script src="./js/index.js"></script>
   <script src="./js/telegram.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>

@@ -55,9 +55,9 @@ musicControl.addEventListener("click", function () {
   isPlaying = !isPlaying;
 });
 
-window.onload = function () {
-  modal.style.display = "block";
-}
+// window.onload = function () {
+//   modal.style.display = "block";
+// }
 
 // language.js
 function changeLanguage(language) {
