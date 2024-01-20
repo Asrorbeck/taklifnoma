@@ -36,3 +36,19 @@ body::before {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.language-button {
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.language-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    max-width: 200px;
+    width: 100%;
+}

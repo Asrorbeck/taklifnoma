@@ -38,14 +38,20 @@
         </div>
 
         <ul>
-          <li><a href="#invit">Приглашаем Вас!</a></li>
+          <li><a id="invitation" href="#invit">Приглашаем Вас!</a></li>
 
-          <li><a href="#map">Как добраться?</a></li>
+          <li><a id="map" href="#map">Как добраться?</a></li>
 
-          <li><a href="#plan">План мероприятия</a></li>
+          <li><a id="plan" href="#plan">План мероприятия</a></li>
 
-          <li><a href="#time">До открытия осталось...</a></li>
+          <li><a id="time__left" href="#time">До открытия осталось...</a></li>
         </ul>
+
+        <div class="language-buttons">
+          <button id="en-btn" class="language-button" onclick="changeLanguage('en')">English</button>
+          <button id="ru-btn" class="language-button" onclick="changeLanguage('ru')">Русский</button>
+          <button id="uz-btn" class="language-button" onclick="changeLanguage('uz')">O'zbekcha</button>
+      </div>
       </div>
     </header>
 
@@ -53,9 +59,9 @@
       <section class="hero">
         <div class="container">
           <div class="hero__container">
-            <h2 class="hero__header">Kamron & Malika</h2>
+            <h2 id="hero__header" class="hero__header">Kamron & Malika</h2>
 
-            <p class="hero__subheader">
+            <p id="hero__subheader" class="hero__subheader">
               are inviting You to their wedding <br />
               21.12.2023
             </p>
@@ -69,9 +75,9 @@
             <div class="invit">
               <img src="./img/invit.png" alt="" class="invit__img" />
 
-              <h2 class="invit__header">Dear Guests!</h2>
+              <h2 id="invit__header" class="invit__header">Dear Guests!</h2>
 
-              <p class="invit__body">
+              <p id="invit__body" class="invit__body">
                 It is a great pleasure to invite You to share the joy of the
                 special event for us - our wedding! <br /><br />
                 On this wonderful day, we would like to surround ourselves with
@@ -82,14 +88,14 @@
 
             <div class="calendar">
               <div class="calendar__wrapper">
-                <p class="calendar__week">Thursday</p>
+                <p id="calendar__weekday" class="calendar__week">Thursday</p>
 
                 <p class="calendar__date">21</p>
 
-                <p class="calendar__week">December</p>
+                <p id="calendar__weekmonth" class="calendar__week">December</p>
               </div>
 
-              <p class="calendar__month">December 2023</p>
+              <p id="calendar__month" class="calendar__month">December 2023</p>
 
               <ul class="calendar__list">
                 <li class="calendar__item">Mon</li>
@@ -113,16 +119,15 @@
             <div class="program">
               <img src="./img/program.png" alt="" class="program__image" />
 
-              <h2 class="program__header">
-                PROGRAM OF <br />
-                THE DAY:
+              <h2 id="program__header" class="program__header">
+                PROGRAM OF <br />THE DAY:
               </h2>
 
               <ul class="program__list">
                 <li class="program__item">
                   <p class="program__item-time">15:00</p>
 
-                  <p class="program__item-action">PHOTO-<br />SHOOTING</p>
+                  <p id="program__photo" class="program__item-action">PHOTO-<br />SHOOTING</p>
                 </li>
 
                 <hr class="program__line" />
@@ -130,7 +135,7 @@
                 <li class="program__item">
                   <p class="program__item-time">18:00</p>
 
-                  <p class="program__item-action">MAIN EVENT</p>
+                  <p id="program__event" class="program__item-action">MAIN EVENT</p>
                 </li>
 
                 <hr class="program__line" />
@@ -138,7 +143,7 @@
                 <li class="program__item">
                   <p class="program__item-time">21:00</p>
 
-                  <p class="program__item-action">CAKE<br />CUTTING</p>
+                  <p id="program__cake" class="program__item-action">CAKE<br />CUTTING</p>
                 </li>
               </ul>
             </div>
@@ -146,13 +151,12 @@
             <div class="location">
               <img src="./img/location.png" alt="" class="location__img" />
 
-              <h2 class="location__header">LOCATION</h2>
+              <h2 id="location__header" class="location__header">LOCATION</h2>
 
-              <p class="location__subheader">RESTOURANT “GRAND HALL”</p>
+              <p id="location__subheader" class="location__subheader">RESTOURANT “GRAND HALL”</p>
 
-              <p class="location__location">
-                Tashkent, Yunusabad district, Yunusabad massif, 13th quarter,
-                15A
+              <p id="location__location" class="location__location">
+                Tashkent, Yunusabad district, Yunusabad massif, 13th quarter, 15A
               </p>
 
               <iframe
@@ -165,16 +169,14 @@
               >
               </iframe>
 
-              <button class="location__yandex">YANDEX MAPS...</button>
+              <button id="location__yandex" class="location__yandex">YANDEX MAPS...</button>
             </div>
 
             <div class="dress">
-              <h2 class="dress__header">DRESS CODE</h2>
+              <h2 id="dress__header" class="dress__header">DRESS CODE</h2>
 
-              <p class="dress__subheader">
-                We will be grateful <br />
-                if You support the wedding <br />
-                day color palette.
+              <p id="dress__subheader" class="dress__subheader">
+                We will be grateful <br /> if You support the wedding <br /> day color palette.
               </p>
 
               <ul class="dress__list">
@@ -184,18 +186,15 @@
                 <li class="dress__item"></li>
               </ul>
 
-              <h3 class="dress__quest">QUESTIONNAIRE</h3>
+              <h3 id="dress__quest" class="dress__quest">QUESTIONNAIRE</h3>
 
-              <p class="dress__body">
-                YOUR PRESENCE IS INCREDIBLY <br />
-                IMPORTANT TO US, AND WE WILL <br />
-                BE HAPPY TO SHARE THIS <br />
-                MOMENT WITH YOU.
+              <p id="dress__body" class="dress__body">
+                YOUR PRESENCE IS INCREDIBLY <br /> IMPORTANT TO US, AND WE WILL <br /> BE HAPPY TO SHARE THIS <br /> MOMENT WITH YOU.
               </p>
             </div>
 
             <div class="form">
-              <p class="form__header">
+              <p id="form__header" class="form__header">
                 Please answer a few questions that we have prepared for You.
               </p>
 
@@ -209,7 +208,7 @@
                 />
 
                 <div class="form__form-wrapper">
-                  <p class="form__form-header">
+                  <p id="form__form-header" class="form__form-header">
                     Whose side are you a guest from?
                   </p>
 
@@ -243,7 +242,7 @@
                 </div>
 
                 <div class="form__form-wrapper">
-                  <p class="form__form-header">
+                  <p id="form__form-header" class="form__form-header">
                     Will you be able to attend our celebration?
                   </p>
 
@@ -276,7 +275,7 @@
                   </div>
                 </div>
 
-                <p class="form__subheader">
+                <p id="form__subheader" class="form__subheader">
                   IF YOU WISH YOU CAN SHARE YOUR WISHES TO US HERE
                 </p>
 
@@ -289,13 +288,13 @@
                 />
 
                 <div class="form__btn-wrapper">
-                  <button class="form__submit" type="submit">SEND</button>
+                  <button id="form__submit" class="form__submit" type="submit">SEND</button>
                 </div>
               </form>
             </div>
 
             <div class="time">
-              <h2 class="time__header">
+              <h2 id="time__header" class="time__header">
                 WE ARE WAITING <br />
                 FOR YOU IN...
               </h2>
@@ -309,25 +308,25 @@
                 <li class="time__item">
                   <h3 id="days" class="time__number">00</h3>
 
-                  <p class="time__body">Days</p>
+                  <p id="time__days" class="time__body">Days</p>
                 </li>
 
                 <li class="time__item">
                   <h3 id="hours" class="time__number">00</h3>
 
-                  <p class="time__body">Hours</p>
+                  <p id="time__hours" class="time__body">Hours</p>
                 </li>
 
                 <li class="time__item">
                   <h3 id="minutes" class="time__number">00</h3>
 
-                  <p class="time__body">Minutes</p>
+                  <p id="time__minutes" class="time__body">Minutes</p>
                 </li>
 
                 <li class="time__item">
                   <h3 id="seconds" class="time__number">00</h3>
 
-                  <p class="time__body">Seconds</p>
+                  <p id="time__seconds" class="time__body">Seconds</p>
                 </li>
               </ul>
 
@@ -380,6 +379,7 @@
     </div>
   </body>
 
+  <script src="./js/language.js"></script>
   <script src="./js/index.js"></script>
   <script src="./js/telegram.js"></script>
 </html>

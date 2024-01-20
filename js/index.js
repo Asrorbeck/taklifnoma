@@ -37,42 +37,9 @@ const musicIcon = document.getElementById("music-icon");
 
 let isPlaying = true;
 
-var modal = document.getElementById("myModal");
-var yesBtn = document.getElementById("yesBtn");
-var noBtn = document.getElementById("noBtn");
-
-function closeModal() {
-  modal.style.display = "none";
-}
-
-yesBtn.addEventListener("click", function () {
-  audio.muted = false
-  audio.play();
-  musicIcon.src = "./img/unmute.svg";
-  closeModal();
-
-  isPlaying = !isPlaying;
-});
-
-noBtn.addEventListener("click", function () {
-  audio.pause();
-  musicIcon.src = "./img/mute.svg";
-  closeModal();
-});
-
-window.addEventListener("click", function (event) {
-  if (event.target === modal) {
-    closeModal();
-  }
-});
-
-window.onload = function () {
-  modal.style.display = "block";
-}
-
 musicControl.addEventListener("click", function () {
   if (isPlaying) {
-    audio.muted = false
+    audio.muted = false;
     audio.play();
     musicIcon.src = "./img/unmute.svg";
   } else {
@@ -82,3 +49,64 @@ musicControl.addEventListener("click", function () {
 
   isPlaying = !isPlaying;
 });
+
+// language.js
+function changeLanguage(language) {
+  const elementsToTranslate = {
+    hero__subheader: "hero_subheader",
+    invit__header: "invit_header",
+    invit__body: "invit_body",
+    invitation: "invitation",
+    map: "map",
+    plan: "plan",
+    time__left: "time__left",
+    calendar__weekday: "calendar__weekday",
+    calendar__weekmonth: "calendar__weekmonth",
+    calendar__month: "calendar__month",
+    program__header: "program__header",
+    program__photo: "program__photo",
+    program__event: "program__event",
+    program__cake: "program__cake",
+    location__header: "location__header",
+    location__subheader: "location__subheader",
+    location__location: "location__location",
+    location__yandex: "location__yandex",
+    dress__header: "dress__header",
+    dress__subheader: "dress__subheader",
+    dress__quest: "dress__quest",
+    dress__body: "dress__body",
+    form__header: "form__header",
+    "form__form-header": "form__form-header",
+    bride: "bride",
+    groom: "groom",
+    "form__form-header": "form__form-header",
+    yes: "yes",
+    no: "no",
+    form__subheader: "form__subheader",
+    form__submit: "form__submit",
+    time__header: "time__header",
+    time__days: "time__days",
+    time__hours: "time__hours",
+    time__minutes: "time__minutes",
+    time__seconds: "time__seconds",
+    // Add more elements and translations as needed
+  };
+
+  for (const elementId in elementsToTranslate) {
+    const translationKey = elementsToTranslate[elementId];
+    const element = document.getElementById(elementId);
+
+    if (element && translations[language][translationKey]) {
+      element.innerHTML = translations[language][translationKey];
+    }
+  }
+
+  document.getElementById(`${language}-btn`).style.display = "none";
+
+  const otherLanguages = ["en", "ru", "uz"].filter((lang) => lang !== language);
+  otherLanguages.forEach((lang) => {
+    document.getElementById(`${lang}-btn`).style.display = "inline-block";
+  });
+
+  console.log(`Language changed to: ${language}`);
+}
