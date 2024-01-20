@@ -9,7 +9,7 @@
     position: relative;
   }
   &__header {
-    font-size: 40px;
+    font-size: 50px;
     font-family: vontgod;
     color: #fff;
     text-align: center;
@@ -21,6 +21,22 @@
     font-family: forum;
     color: #fff;
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 395px) {
+  .hero {
+    &__header {
+      font-size: 45px;
+    }
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .hero {
+    &__header {
+      font-size: 40px;
+    }
   }
 }
 
