@@ -55,11 +55,10 @@ musicControl.addEventListener("click", function () {
   isPlaying = !isPlaying;
 });
 
-// window.onload = function () {
-//   modal.style.display = "block";
-// }
+window.onload = function () {
+  modal.style.display = "block";
+}
 
-// language.js
 function changeLanguage(language) {
   const elementsToTranslate = {
     hero__subheader: "hero_subheader",
@@ -97,8 +96,7 @@ function changeLanguage(language) {
     time__days: "time__days",
     time__hours: "time__hours",
     time__minutes: "time__minutes",
-    time__seconds: "time__seconds",
-    // Add more elements and translations as needed
+    time__seconds: "time__seconds"
   };
 
   for (const elementId in elementsToTranslate) {
