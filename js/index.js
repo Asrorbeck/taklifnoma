@@ -36,6 +36,11 @@ const audio = document.getElementById("background-music");
 const musicIcon = document.getElementById("music-icon");
 
 let isPlaying = true;
+var modal = document.getElementById("myModal");
+
+function closeModal() {
+  modal.style.display = "none";
+}
 
 musicControl.addEventListener("click", function () {
   if (isPlaying) {
@@ -49,6 +54,16 @@ musicControl.addEventListener("click", function () {
 
   isPlaying = !isPlaying;
 });
+
+window.addEventListener("click", function (event) {
+  if (event.target === modal) {
+    closeModal();
+  }
+});
+
+window.onload = function () {
+  modal.style.display = "block";
+}
 
 // language.js
 function changeLanguage(language) {
@@ -101,6 +116,8 @@ function changeLanguage(language) {
     }
   }
 
+  
+
   document.getElementById(`${language}-btn`).style.display = "none";
 
   const otherLanguages = ["en", "ru", "uz"].filter((lang) => lang !== language);
@@ -109,4 +126,5 @@ function changeLanguage(language) {
   });
 
   console.log(`Language changed to: ${language}`);
+  closeModal()
 }
