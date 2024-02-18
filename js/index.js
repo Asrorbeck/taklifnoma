@@ -61,6 +61,12 @@ window.onload = function () {
 
 function changeLanguage(language) {
   const elementsToTranslate = {
+    NoLabel: "NoLabel",
+    YesLabel: "YesLabel",
+    brideLabel: "brideLabel",
+    groomLabel: "groomLabel",
+    navbar__logo: "navbar__logo",
+    hero__header: "hero_header",
     hero__subheader: "hero_subheader",
     invit__header: "invit_header",
     invit__body: "invit_body",
@@ -87,7 +93,7 @@ function changeLanguage(language) {
     "form__form-header": "form__form-header",
     bride: "bride",
     groom: "groom",
-    "form__form-header": "form__form-header",
+    'form__form-header-attendance': "form__form-header-attendance",
     yes: "yes",
     no: "no",
     form__subheader: "form__subheader",
@@ -104,11 +110,20 @@ function changeLanguage(language) {
     const element = document.getElementById(elementId);
 
     if (element && translations[language][translationKey]) {
-      element.innerHTML = translations[language][translationKey];
+      // Update inner text for labels (assuming these elements are labels)
+      if (element.tagName === 'LABEL') {
+        element.innerText = translations[language][translationKey];
+      }
+      // If these are input elements, update their value attribute
+      else if (element.tagName === 'INPUT') {
+        element.value = translations[language][translationKey];
+      }
+      // For other elements, update innerHTML
+      else {
+        element.innerHTML = translations[language][translationKey];
+      }
     }
   }
-
-  
 
   document.getElementById(`${language}-btn`).style.display = "none";
 

@@ -9,10 +9,11 @@
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Kamron & Malika">
-    <meta property="og:description" content="НАЖМИТЕ, ЧТОБЫ ПОСМОТРЕТЬ ПРИГЛАШЕНИЕ ⬇️">
+    <meta property="og:description" content="ВЫ ПРИГЛАШЕНЫ НА СВАДЬБУ
+    ✨КАМРОНА И МАЛИКИ✨">
     <meta property="og:url" content="https://le_invitations.uz">
     <meta property="og:image:secure_url" content="https://le_invitations.uz">
-    <meta property="og:image" content="https://imgur.com/0Zt4yRe.jpg">
+    <meta property="og:image" content="https://imgur.com/b6zXiXh.jpg">
     <meta property="og:image:width" content="800" />
     <meta property="og:image:height" content="1200" />
     <title>le-invitations</title>
@@ -28,7 +29,7 @@
           <span class="menu-icon"><img src="./img/burger.svg" alt="" /></span>
         </div>
 
-        <a href="#" class="navbar__logo">INVITATION</a>
+        <a href="#" class="navbar__logo" id="navbar__logo">INVITATION</a>
 
         <button id="navbar__btn" class="navbar__btn">
           <img
@@ -251,13 +252,13 @@
               </p>
 
               <form data-aos="fade" data-aos-duration="2000" class="form__form" onsubmit="return sendTelegram()">
-                <input
-                  class="form__input"
-                  type="text"
-                  required
-                  placeholder="Your name and surname..."
-                  id="name"
-                />
+                  <input
+                    class="form__input"
+                    type="text"
+                    required
+                    placeholder="Your name and surname..."
+                    id="name"
+                  />
 
                 <div class="form__form-wrapper">
                   <p id="form__form-header" class="form__form-header">
@@ -273,11 +274,12 @@
                         name="come"
                         value="bride"
                         id="bride"
+                        onclick="changeGuestSide('bride')"
                       />
-                      Bride’s
+                      <span id="brideLabel">Bride's</span>
                     </label>
                   </div>
-
+                
                   <div class="form__form-answer-wrapper">
                     <label class="form__answer-label" for="groom">
                       <input
@@ -287,14 +289,15 @@
                         name="come"
                         value="groom"
                         id="groom"
+                        onclick="changeGuestSide('groom')"
                       />
-                      Groom’s
+                      <span id="groomLabel">Groom’s</span>
                     </label>
                   </div>
                 </div>
 
                 <div class="form__form-wrapper">
-                  <p id="form__form-header" class="form__form-header">
+                  <p id="form__form-header-attendance" class="form__form-header">
                     Will you be able to attend our celebration?
                   </p>
 
@@ -308,7 +311,7 @@
                         value="yes"
                         id="yes"
                       />
-                      Certainly, I'll be happy to come
+                      <span id="YesLabel">Certainly, I'll be happy to come</span>
                     </label>
                   </div>
 
@@ -322,7 +325,7 @@
                         value="no"
                         id="no"
                       />
-                      Unfortunately, I won't be able to attend
+                      <span id="NoLabel">Unfortunately, I won't be able to attend</span>                      
                     </label>
                   </div>
                 </div>
@@ -426,7 +429,7 @@
 
     <div id="myModal" class="modal">
       <div class="modal-content">
-        <p>Which language do you prefer?</p>
+        <p>Выберите удобный Вам язык:</p>
         <button class="modal-button" onclick="changeLanguage('en')">
           English
         </button>
